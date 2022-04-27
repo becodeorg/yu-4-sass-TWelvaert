@@ -11,38 +11,24 @@ body {
 }
 
 article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 article section {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  flex-grow: 1;
+  flex-basis: 45%;
   border: 1px silver solid;
-  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   padding: 16px;
   margin: 16px;
   clear: both;
   overflow: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 article section#selling-points {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-grow: 2;
+  flex-basis: 100%;
 }
-
 article pre {
   background: #000;
   border: 1px solid #ddd;
@@ -57,12 +43,10 @@ article pre {
   display: block;
   white-space: pre-wrap;
 }
-
 article pre.before {
   float: left;
   width: 40%;
 }
-
 article pre.after {
   float: right;
   width: 40%;
@@ -85,10 +69,7 @@ h6 {
   margin-bottom: 0px;
 }
 
-.message,
-.success,
-.error,
-.warning {
+.warning, .error, .success, .message {
   border: 1px solid #ccc;
   padding: 16px;
   margin: 16px;
@@ -97,14 +78,16 @@ h6 {
 }
 
 .success {
+  border-color: green;
   background-color: green;
 }
 
 .error {
+  border-color: red;
   background-color: red;
 }
 
 .warning {
-  background-color: orange;
-}
-/*# sourceMappingURL=style.css.map */
+  border-color: yellow;
+  background-color: yellow;
+}/*# sourceMappingURL=style.css.map */
