@@ -1,0 +1,7 @@
+@use "variables" as *;
+@use "./style.css";
+
+body {
+    background-color: lightblue;
+    color: variables.$red;
+    }
